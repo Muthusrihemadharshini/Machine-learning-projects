@@ -1,1 +1,70 @@
+## Spam Email Detection System  
+
+### Introduction  
+The **Spam Email Detection System** identifies spam emails by analyzing email content. It applies Natural Language Processing (NLP) techniques and machine learning algorithms to classify emails as **Spam** or **Not Spam**.  
+
+---
+
+### Features  
+- **Text Preprocessing**: Tokenization, stemming, and removal of stopwords.  
+- **Spam Classification**: Utilizes models like Logistic Regression and Naive Bayes.  
+- **Evaluation Metrics**: Precision, recall, F1-score, and accuracy for performance measurement.  
+
+---
+
+### Dataset  
+The system uses the [Spam Email Dataset](https://archive.ics.uci.edu/ml/datasets/spambase) containing labeled email samples.  
+- Features: Word frequencies, character counts, special character frequencies  
+- Classes: **Spam (1)** and **Not Spam (0)**  
+
+---
+
+### Installation  
+
+#### Prerequisites  
+- Python 3.7+  
+- Libraries: `numpy`, `pandas`, `scikit-learn`, `nltk`  
+
+#### Steps  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/your_username/spam-email-detection.git  
+   cd spam-email-detection  
+   ```  
+2. Install dependencies:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+
+---
+
+### Usage  
+
+1. Run the detection script:  
+   ```bash  
+   python spam_email_detection.py  
+   ```  
+2. Input the email content to classify.  
+
+Example:  
+```
+Email Content: "Congratulations! You’ve won $1,000,000. Click here to claim your prize."  
+Classification: Spam  
+```  
+
+---
+
+### Results  
+- Achieved a classification accuracy of ~98% using a Naive Bayes classifier.  
+- Confusion Matrix indicates a high True Positive rate for spam detection.  
+
+---
+
+### Contributing  
+Contributions to improve feature extraction or classification models are welcome!  
+
+---
+
+### License  
+This project is licensed under the MIT License.  
 
